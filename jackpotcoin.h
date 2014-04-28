@@ -5,7 +5,7 @@
 extern "C" {
 #endif
 
-void jackpotcoin_hash(const char* input, char* output, char ispos);
+void jackpotcoin_hash(const char* input, char* output);
 
 #ifdef __cplusplus
 }

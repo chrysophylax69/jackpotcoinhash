@@ -1,6 +1,6 @@
 from distutils.core import setup, Extension
 
-coin_hash_module = Extension('jackpotcoin_hash',
+jackpotcoin_hash_module = Extension('jackpotcoin_hash',
                                sources = ['jackpotcoinmodule.c',
                                           'jackpotcoin.c',
 										  'sha3/blake.c',
@@ -12,5 +12,5 @@ coin_hash_module = Extension('jackpotcoin_hash',
 
 setup (name = 'jackpotcoin_hashs',
        version = '1.0',
-       description = 'Bindings for proof of work/stake',
-       ext_modules = [jackpotcoin_hash_module])
+       description = 'Bindings for proof of work/stake used by JackpotCoin',
+       ext_modules = [jackpotcoin_hash_module])       
